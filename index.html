@@ -9,7 +9,7 @@
 <body>
     <div id="container">
         <header>
-            <img
+            <img id="icon"
                 src="img/basketball_icon.gif"
                 alt="SportzProdz home"
             >
@@ -61,5 +61,29 @@
             <p>@copyright 2024 Sportzprodz;</p>
         </footer>
     </div>
+<script>
+
+    (function() {
+
+        var n = 0;
+        const imageList = [
+            "basketball_icon.gif",
+            "baseball_icon.gif", 
+            "soccer_icon.gif"
+        ];
+        imageList.swap = function (n) {
+            document.getElementById('icon').src = 'img/' + imageList[n];
+        };
+
+        setInterval(function () {
+            if (n == imageList.length) { n = 0; }
+            imageList.swap(n);
+            n++;
+        }, 1000);
+
+    })();
+
+
+</script>
 </body>
 </html>
