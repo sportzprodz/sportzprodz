@@ -83,6 +83,16 @@ nav a {
     margin: 1em 0.5em;
 }
 
+#more_info p{
+    display: block;
+    margin-bottom: 1em;
+}
+
+#more_info a {
+    color: rgb( 146, 216, 222 );
+    text-decoration: none;
+}
+
 footer {
     display:block;
     width: 100%;
